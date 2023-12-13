@@ -1,0 +1,15 @@
+.fullscreen-image {
+  position: fixed; /* Użyj fixed lub absolute w zależności od potrzeb */
+  top: 0;
+  left: 20%;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 100%;
+  //object-fit: cover; /* Zapewnia, że obraz pokrywa cały ekran bez utraty proporcji */
+  z-index: -1; /* Opcjonalnie, aby umieścić obraz w tle */
+}
+app-faces{
+  display: flex;
+  position: absolute;
+}

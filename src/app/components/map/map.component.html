@@ -1,0 +1,28 @@
+<img src="/assets/map.jpg" class="fullscreen-image">
+<app-faces [headType]="0" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'0%'}" [description]="'pszenica 1'"></app-faces>
+<app-faces [headType]="1" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'12%'}" [description]="'pszenica 2'"></app-faces>
+<app-faces [headType]="2" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'24%'}" [description]="'pszenica 3'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="0" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'36%'}" [description]="'żyto 1'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="1" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'47%'}" [description]="'żyto 2'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="2" [mouthType]="-1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'58%'}" [description]="'żyto 3'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="0" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'69%'}" [description]="'jęczmień 1'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="1" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'80%'}" [description]="'jęczmień 2'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="2" [earType]="-1" [hairType]="-1" [ngStyle]="{'top':'0%','right':'1%'}" [description]="'jęczmień 3'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="0" [hairType]="-1" [ngStyle]="{'top':'12%','right':'1%'}" [description]="'owies i MZ 1'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="1" [hairType]="-1" [ngStyle]="{'top':'24%','right':'1%'}" [description]="'owies i MZ 2'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="2" [hairType]="-1" [ngStyle]="{'top':'36%','right':'1%'}" [description]="'owies i MZ 3'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="0" [ngStyle]="{'top':'48%','right':'1%'}" [description]="'pszenżyto 1'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="1" [ngStyle]="{'top':'60%','right':'1%'}" [description]="'pszenżyto 2'"></app-faces>
+<app-faces [headType]="-1" [eyeType]="-1" [mouthType]="-1" [earType]="-1" [hairType]="2" [ngStyle]="{'top':'72%','right':'1%'}" [description]="'pszenżyto 3'"></app-faces>
+<ng-container *ngFor="let key of getVoivodeshipKeys()" >
+  <app-faces
+    [headType]="voivodeshipFaces[key].headType"
+    [eyeType]="voivodeshipFaces[key].eyeType"
+    [mouthType]="voivodeshipFaces[key].mouthType"
+    [earType]="voivodeshipFaces[key].earType"
+    [hairType]="voivodeshipFaces[key].hairType"
+    [ngStyle]="voivodeship[key]"
+  >
+
+  </app-faces>
+</ng-container>
